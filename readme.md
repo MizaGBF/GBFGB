@@ -10,7 +10,9 @@ Extension to display the Genesis Bar value.
 javascript:(function () { try{ if(chrome.runtime && chrome.runtime.sendMessage){ chrome.runtime.sendMessage('YOUR_EXTENSION_ID', {data: ""+stage.pJsnData.unique_gauge.value}, (response) => {});} else {alert('Error, Extension messaging API not found: Is the extension loaded?');} } catch(err) {} })();
 ```
   
-The current percentage will appear on the Chrome extension icon.  
+In the raid, click the bookmarklet to get the bar value.  
+The current percentage will appear on the Chrome extension icon, I recommend pinning it and making it visible.  
+Disable the extension when you don't need it, if you wish.  
   
 ### Disclaimer  
 Use or modify it at your own risk.
