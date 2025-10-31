@@ -1,7 +1,7 @@
 chrome.runtime.onMessageExternal.addListener((message, sender, sendResponse) => {
 	if(message.data && /^\d+$/.test(message.data)) {
 		let i = parseInt(message.data);
-		if(i >= 0 && i < 100)
+		if(i >= 0 && i <= 100)
 		{
 			if(i < 35)
 				chrome.action.setBadgeBackgroundColor({ color: 'green' });
